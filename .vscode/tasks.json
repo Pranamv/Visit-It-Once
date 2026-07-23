@@ -1,0 +1,21 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "serve portfolio",
+			"type": "shell",
+			"command": "python",
+			"args": [
+				"-m",
+				"http.server",
+				"8000",
+				"-d",
+				".",
+				"--bind",
+				"127.0.0.1"
+			],
+			"isBackground": true,
+			"group": "build"
+		}
+	]
+}

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pruthvi L | AI & ML Engineer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="portfolio-container">
+        <!-- LEFT PANEL: GitHub Live HUD Scanner & Bio -->
+        <aside class="left-panel">
+            <div class="scanner-wrapper">
+                <div class="hud-header">
+                    <span class="status-dot"></span> SYSTEM SCANNING // GITHUB_ID: Pruthvi-l
+                </div>
+                
+                <div class="profile-avatar-container">
+                    <div class="scan-line-img"></div>
+                    <img id="gh-avatar" src="assets/images/profile.jpg" alt="Pruthvi L">
+                    <canvas id="pixel-canvas"></canvas>
+                </div>
+
+                <div class="git-stats-hud">
+                    <h2 id="gh-name">Pruthvi L</h2>
+                    <p id="gh-bio" class="role-subtitle">AI & Machine Learning Engineer</p>
+                    <p class="location-text"><i class="fas fa-map-marker-alt"></i> Bengaluru, Karnataka</p>
+                    
+                    <div class="hud-metrics">
+                        <div class="metric">
+                            <span class="label">REPOS</span>
+                            <span class="value" id="gh-repos">--</span>
+                        </div>
+                        <div class="metric">
+                            <span class="label">FOLLOWERS</span>
+                            <span class="value" id="gh-followers">--</span>
+                        </div>
+                        <div class="metric">
+                            <span class="label">CGPA</span>
+                            <span class="value highlight">8.5</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-buttons-hud">
+                        <a href="https://github.com/Pruthvi-l" target="_blank" class="hud-btn">
+                            <i class="fab fa-github"></i> GitHub Profile
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" class="hud-btn">
+                            <i class="fab fa-linkedin"></i> LinkedIn Profile
+                        </a>
+                        <a href="mailto:cheri191004@gmail.com" class="hud-btn primary">
+                            <i class="fas fa-envelope"></i> Email Me
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- RIGHT PANEL: Full Interactive Resume Portfolio -->
+        <main class="right-panel">
+            <!-- Header Section -->
+            <header class="hero-section">
+                <h1>Hi, I'm <span class="highlight-text">Pruthvi L</span></h1>
+                <h2>AI & Machine Learning Engineer</h2>
+                <p class="tagline">
+                    Building end-to-end ML systems, computer vision models, and full-stack AI applications with Python, TensorFlow, OpenCV, and Flask.
+                </p>
+                <div class="cta-buttons">
+                    <a href="assets/resume.pdf" class="btn primary-btn" download><i class="fas fa-file-download"></i> Download Resume</a>
+                    <a href="tel:+919483129746" class="btn secondary-btn"><i class="fas fa-phone"></i> +91-9483129746</a>
+                </div>
+            </header>
+
+            <!-- Technical Skills -->
+            <section class="content-block">
+                <h3><i class="fas fa-code"></i> Technical Stack</h3>
+                <div class="skills-category">
+                    <h4>Languages & Core</h4>
+                    <div class="skills-grid">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">HTML5 / CSS3</span>
+                        <span class="skill-tag">JavaScript</span>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h4>AI, ML & Computer Vision</h4>
+                    <div class="skills-grid">
+                        <span class="skill-tag">TensorFlow / Keras</span>
+                        <span class="skill-tag">OpenCV</span>
+                        <span class="skill-tag">Scikit-learn</span>
+                        <span class="skill-tag">HuggingFace Transformers</span>
+                        <span class="skill-tag">Prompt Engineering</span>
+                        <span class="skill-tag">CNNs & Transfer Learning</span>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h4>Tools & Frameworks</h4>
+                    <div class="skills-grid">
+                        <span class="skill-tag">Flask</span>
+                        <span class="skill-tag">MySQL & MongoDB</span>
+                        <span class="skill-tag">Git / GitHub</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">Kaggle</span>
+                        <span class="skill-tag">Power BI</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section class="content-block">
+                <h3><i class="fas fa-project-diagram"></i> Featured Projects</h3>
+                
+                <div class="project-card">
+                    <div class="project-header">
+                        <h4>Nutrition Deficiency Detection Using Machine Learning</h4>
+                        <span class="badge">Accuracy: 89%</span>
+                    </div>
+                    <p class="tech-used">Tech: Python, TensorFlow, Keras, OpenCV, Flask, HTML/CSS/JS, MySQL/MongoDB</p>
+                    <ul class="bullet-points">
+                        <li>Designed and trained a CNN-based image classification model to identify nutritional deficiencies from body images across 7 deficiency classes.</li>
+                        <li>Built an automated image preprocessing and augmentation pipeline, achieving 89% classification accuracy.</li>
+                        <li>Developed and deployed a Flask web application with real-time image upload, prediction, and visual results.</li>
+                    </ul>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h4>Network Traffic Anomaly Detection</h4>
+                        <span class="badge secondary">Cybersecurity ML</span>
+                    </div>
+                    <p class="tech-used">Tech: Python, Scikit-learn, XGBoost, Pandas, NumPy</p>
+                    <ul class="bullet-points">
+                        <li>Developed an ML system to detect anomalous network traffic patterns and cyber threats.</li>
+                        <li>Trained and evaluated Random Forest, XGBoost, and Isolation Forest models for multi-class anomaly detection.</li>
+                        <li>Evaluated performance using Precision, Recall, F1-Score, and Confusion Matrix metrics to deploy the best model.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Experience / Internships -->
+            <section class="content-block">
+                <h3><i class="fas fa-briefcase"></i> Work Experience</h3>
+                
+                <div class="experience-item">
+                    <div class="exp-header">
+                        <div>
+                            <h4>Full Stack Engineer - AI Integration Intern</h4>
+                            <span class="company">Naitrons Software Solutions</span>
+                        </div>
+                        <span class="date">Jan 2026 – Mar 2026</span>
+                    </div>
+                    <ul class="bullet-points">
+                        <li>Developed an AI-powered Nutrition Deficiency Detection System using Computer Vision and ML.</li>
+                        <li>Integrated ML models into a full-stack web app for real-time inference and result rendering.</li>
+                        <li>Designed NoSQL (MongoDB) schemas for storing unstructured metadata generated by the AI inference pipeline.</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <div class="exp-header">
+                        <div>
+                            <h4>Data Science Intern</h4>
+                            <span class="company">QSpiders</span>
+                        </div>
+                        <span class="date">Mar 2026 – Jun 2026</span>
+                    </div>
+                    <ul class="bullet-points">
+                        <li>Performed data cleaning, exploratory data analysis (EDA), and feature engineering on real-world datasets.</li>
+                        <li>Developed predictive machine learning models using Scikit-learn, evaluating Accuracy, Precision, and Recall.</li>
+                        <li>Leveraged Pandas, NumPy, and Matplotlib for data processing and visual insights.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Education -->
+            <section class="content-block">
+                <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                <div class="edu-item">
+                    <div class="exp-header">
+                        <div>
+                            <h4>B.E. in Artificial Intelligence and Machine Learning</h4>
+                            <span class="company">BGS Institute of Technology, Mandya</span>
+                        </div>
+                        <span class="date">2022 – 2026 | <strong>CGPA: 8.5</strong></span>
+                    </div>
+                </div>
+                <div class="edu-item">
+                    <div class="exp-header">
+                        <div>
+                            <h4>Class XII (PUC)</h4>
+                            <span class="company">Sri Chaithanya PU College</span>
+                        </div>
+                        <span class="date">2022 | <strong>84%</strong></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certifications & Leadership -->
+            <section class="content-block">
+                <h3><i class="fas fa-award"></i> Certifications & Leadership</h3>
+                <ul class="bullet-points">
+                    <li><strong>NPTEL:</strong> Introduction to AI[cite: 2]</li>
+                    <li><strong>Co-ordinator:</strong> NEOFESTA (Technical Hackathon conducted by Dept. of AI & ML)[cite: 2]</li>
+                    <li><strong>National Level Hackathon:</strong> Cyber Security & Ethical Hacking (Dept. of CSE, MIT)[cite: 2]</li>
+                    <li><strong>Event Co-ordinator:</strong> Technical event lead at College Symposium & JVTM Exhibitions[cite: 2]</li>
+                </ul>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
