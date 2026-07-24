@@ -91,41 +91,40 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: grayscale(1);
-    opacity: 0;
+    object-position: center 15%;
+    opacity: 1;
     position: absolute;
     top: 0;
     left: 0;
     pointer-events: none;
-    visibility: hidden;
+    visibility: visible;
     animation: none;
+    z-index: 1;
 }
 
-.profile-avatar-container canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: block;
+/* canvas removed from markup; no canvas styles needed */
+
+.scan-line-img {
+    z-index: 3;
 }
 
 .scan-line-img {
     position: absolute;
-    top: 0;
+    top: -8px;
     left: 0;
     width: 100%;
     height: 8px;
     background: linear-gradient(to bottom, transparent 0%, var(--accent-color) 50%, transparent 100%);
-    box-shadow: 0 0 15px var(--accent-color), inset 0 0 10px var(--accent-color);
-    animation: scanImage 3.5s linear infinite;
+    box-shadow: 0 0 12px var(--accent-color), inset 0 0 6px var(--accent-color);
+    animation: scanLineMove 2.5s linear infinite;
     z-index: 10;
+    pointer-events: none;
 }
 
-@keyframes scanImage {
-    0% { top: 0%; opacity: 0; }
-    10% { opacity: 1; }
-    90% { opacity: 1; }
+@keyframes scanLineMove {
+    0% { top: -8px; opacity: 0; }
+    5% { opacity: 1; }
+    95% { opacity: 1; }
     100% { top: 100%; opacity: 0; }
 }
 
